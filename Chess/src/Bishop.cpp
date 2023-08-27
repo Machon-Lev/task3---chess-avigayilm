@@ -1,6 +1,7 @@
 #include "Bishop.h"
 
-bool Bishop::isLegal(int srcRow, int srcCol, int destRow, int destCol, const Piece** board) const
+Bishop::Bishop(bool color) :Piece(color, 'bp') {}
+bool Bishop::isLegal(int srcRow, int srcCol, int destRow, int destCol, Piece* const (&board)[8][8]) const
 {
     int rowDiff = abs(destRow - srcRow);
     int colDiff = abs(destCol - srcCol);

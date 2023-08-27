@@ -1,8 +1,8 @@
 #include "Rook.h"
 
-Rook::Rook(bool color) :Piece(color) {}
+Rook::Rook(bool color): Piece(color,'r') {}
 
-bool Rook::isLegal(int srcRow, int srcCol, int destRow, int destCol, const Piece** board) const
+bool Rook::isLegal(int srcRow, int srcCol, int destRow, int destCol, Piece* const (&board)[8][8]) const
 {
     int rowDiff = abs(destRow - srcRow);
     int colDiff = abs(destCol - srcCol);

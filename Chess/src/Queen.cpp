@@ -1,9 +1,9 @@
 #include "Queen.h"
 
 
-Queen::Queen(bool color) :Piece(color) {}
+Queen::Queen(bool color): Piece(color,'q') {}
 
-bool Queen::isLegal(int srcRow, int srcCol, int destRow, int destCol, const Piece** board)const
+bool Queen::isLegal(int srcRow, int srcCol, int destRow, int destCol, Piece* const (&board)[8][8])const
 {
     int rowDiff = abs(destRow - srcRow);
     int colDiff = abs(destCol - srcCol);

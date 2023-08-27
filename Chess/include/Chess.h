@@ -9,7 +9,7 @@ using std::endl;
 using std::string; 
 
 //const int _SIZE = 21;
-const int _SIZE = 8;
+const int _SIZE = 21;
 
 class Chess {
 	unsigned char m_board[_SIZE][_SIZE] = { 0 };

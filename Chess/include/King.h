@@ -14,7 +14,7 @@ class King : public Piece
 {
 public:
 	King(bool color);
-	bool isLegal(int srcRow, int srcCol, int destRow, int destCol, Piece** Board)const;
+	bool isLegal(int srcRow, int srcCol, int destRow, int destCol, Piece* const (&board)[SIZE_B][SIZE_B])const;
 };
 
 
